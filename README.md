@@ -91,7 +91,7 @@ The GUI enables users to load and detect tumours in mammograms and save report f
 <br><em>Click the image to view the GUI demonstation video</em>
  
     
-## Difficult cases
+## Difficult Cases
     
 The model evaluations showed a specific problem with benign cases. To further understand why, a benign tumour that was missed during testing was compared with a correctly diagnosed malignant and benign tumour in addition to a random sample of normal tissue. (Figure 4) To compare these segments the hamming distance was calculated between the misdiagnosed benign tumour and the three correctly classified segments. The hamming distance represents the number of positions in which the symbols of two equal length hashed strings formed from the images are different. The lower the hamming distance the more similar the strings are. The hamming distances show that the missed benign tumour is most similar to normal tissue, rather than other benign or malignant tumours. Hence the diagnosis is completely missed, and sensitivity is reduced. The difference in hamming distance to the detected malignant and benign tumours is very small. This could lead to misclassification even if the tumour is correctly localised. Further work could be carried out to better pre-process benign cases to make them more distinguishable from other classifications.
 
